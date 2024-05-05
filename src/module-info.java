@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author arthu
+ *
+ */
+module BarManager {
+}
