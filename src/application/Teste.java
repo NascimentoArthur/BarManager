@@ -15,12 +15,6 @@ public class Teste {
 		
 		File clientes = Utils.getArquivo("teste.txt");
 		
-		System.out.println(clientes.listFiles());
-		
-		clientes.delete();
-		
-		System.out.println(clientes.listFiles());
-		
 		sc.close();
 		
 	}
