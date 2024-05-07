@@ -18,8 +18,6 @@ public class Teste {
 		
 		File teste;
 		
-		Utils.getArquivo("gracons");
-		
 		Cliente.lerClientes();
 		
 		

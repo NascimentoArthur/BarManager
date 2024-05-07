@@ -87,14 +87,14 @@ public class Cliente{
 		clientes_f = Utils.getArquivo("clientes");
 		id = Utils.novoId(clientes_f);
 		
-	       try (BufferedWriter writer = new BufferedWriter(new FileWriter(clientes_f, true))) {
-	           writer.write("Id: " + id + ", Cliente: " + nome + ", Email: " + email + ", Idade: " + idade);
-	           writer.newLine();
+	    try (BufferedWriter writer = new BufferedWriter(new FileWriter(clientes_f, true))) {
+	    	writer.write("Id: " + id + ", Cliente: " + nome + ", Email: " + email + ", Idade: " + idade);
+	    	writer.newLine();
 	           
-	           sc.close();
-	       } catch (IOException ebuf) {
-	           System.err.println("ERR_LOG getArquivo Erro ao escrever no arquivo: " + ebuf.getMessage());
-	       }
+	    sc.close();
+	    } catch (IOException ebuf) {
+	    	System.err.println("ERR_LOG getArquivo Erro ao escrever no arquivo: " + ebuf.getMessage());
+	    }
 	   }
 	
 	

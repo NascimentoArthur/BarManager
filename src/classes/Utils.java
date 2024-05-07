@@ -22,7 +22,7 @@ public class Utils {
 		System.out.println("Informe qual tabela você quer acessar");
 		arquivo = sc.nextLine();
 		
-		File file = new File("C:\\Users\\arthu\\Desktop\\UFRPE - LC\\3_Periodo\\Lab 2\\Projeto\\BarManager\\dbase\\", arquivo + ".txt");
+		File file = new File(".\\dbase\\", arquivo + ".txt");
 		
 		sc.close();
 		return file;
