@@ -28,7 +28,7 @@ public class Utils {
 		return file;
 	}
 	
-	// Acessa diretamente a tabela informada por parâmetro
+	// Acessa diretamente a tabela informada por parâmetro.
 	public static File getArquivo(String tabela) {
 		File file;
 		if(tabela == "clientes")
