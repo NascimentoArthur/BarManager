@@ -1,6 +1,7 @@
 package application;
 
 import java.io.File;
+import java.io.IOException;
 import java.util.List;
 import java.util.Locale;
 import java.util.Scanner;
@@ -11,11 +12,16 @@ import classes.Utils;
 
 @SuppressWarnings("unused")
 public class Teste {
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		
-		Utils.novoId(Utils.getArquivo("clientes"));
+		File teste;
+		
+		Utils.getArquivo("gracons");
+		
+		Cliente.lerClientes();
+		
 		
 		sc.close();
 		

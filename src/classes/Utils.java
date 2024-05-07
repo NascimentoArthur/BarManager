@@ -33,8 +33,12 @@ public class Utils {
 		File file;
 		if(tabela == "clientes")
 		{
-			file = new File("C:\\Users\\arthu\\Desktop\\UFRPE - LC\\3_Periodo\\Lab 2\\Projeto\\BarManager\\dbase\\clientes.txt");
+			file = new File(".\\dbase\\clientes.txt");
 			
+		}
+		else if(tabela == "garcons")
+		{
+			file = new File(".\\dbase\\garcons.txt");
 		}
 		else
 		{
@@ -87,8 +91,16 @@ public class Utils {
             }
         }
         return novoId;
+        
     }
     
+    
+    
+    public static String getRepositorio() throws IOException {
+		String path = new java.io.File(".").getCanonicalPath();
+		
+		return path;
+	}
     
     
 }
